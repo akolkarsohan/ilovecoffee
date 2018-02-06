@@ -1,0 +1,30 @@
+<html>
+<script>
+
+function myFunction() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("my-demo").innerHTML = this.responseText;
+        }
+    };
+    xhttp.open("GET", "https://jto6qz8rm9.execute-api.ap-south-1.amazonaws.com/prod/myServerlessPage", true);
+    xhttp.send();
+
+}
+
+</script>
+<body><div align="center"><br><br><br><br>
+<h1><span id="my-demo">I love Coffee!</span></h1>
+<button onclick="myFunction()">Click me</button><br>
+<br><br>
+<img style="max-width: 25%; max-height: 25%;" src="https://s3.ap-south-1.amazonaws.com/ilovecoffee.akolkarsohan.com/coffee.png"><div>
+<br><br>
+<div align="center">
+<img style="max-width: 25%; max-height: 25%;" src="https://s3.ap-south-1.amazonaws.com/ilovecoffee.akolkarsohan.com/download.png">
+<img style="max-width: 25%; max-height: 25%;" src="https://s3.ap-south-1.amazonaws.com/ilovecoffee.akolkarsohan.com/images.jpeg">
+<img style="max-width: 25%; max-height: 25%;" src="https://s3.ap-south-1.amazonaws.com/ilovecoffee.akolkarsohan.com/imagesnolife.png">
+<img style="max-width: 25%; max-height: 25%;" src="https://s3.ap-south-1.amazonaws.com/ilovecoffee.akolkarsohan.com/raf%2C750x1000%2C075%2Ct%2Cfafafa_ca443f4786.u1.jpg">
+</div>
+</body>
+</html>
